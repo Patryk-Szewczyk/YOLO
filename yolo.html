@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="code, make, programming, app, website, software, database, front-end, back-end, company"></meta>
+    <title>YOLO</title>
+    <link rel="icon" type="image/x-icon" href="/image/yolo-icon.ico">
+    <link rel="stylesheet" href="yolo.css" type="text/css" /><!--yolo-icon.png-->
+</head>
+<body>
+
+    <div class="preloader"></div>
+
+    <div class="page">
+        <div class="header">
+            <nav class="navbar-mobile">
+                <div class="logo-box">C</div>
+                <div class="nav-mob-left-buttons">
+                    <div class="nav-mob-icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
+                        </svg>
+                    </div>
+                    <div class="nav-mob-icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                        </svg>
+                    </div>
+                    <div class="nav-mob-icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
+                    </div>
+                    <div class="nav-mob-icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stack-overflow" viewBox="0 0 16 16">
+                            <path d="M12.412 14.572V10.29h1.428V16H1v-5.71h1.428v4.282h9.984z"/>
+                            <path d="M3.857 13.145h7.137v-1.428H3.857zM10.254 0 9.108.852l4.26 5.727 1.146-.852zm-3.54 3.377 5.484 4.567.913-1.097L7.627 2.28l-.914 1.097zM4.922 6.55l6.47 3.013.603-1.294-6.47-3.013-.603 1.294zm-.925 3.344 6.985 1.469.294-1.398-6.985-1.468-.294 1.397z"/>
+                        </svg>
+                    </div>
+                    <div class="nav-mob-dropdown-button">
+                        <div class="nav-mob-dropdown-strip-group">
+                            <div class="nav-mob-dropdown-strip"></div>
+                            <div class="nav-mob-dropdown-strip"></div>
+                            <div class="nav-mob-dropdown-strip"></div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="nav-mob-dropdown-target">
+                <div class="nav-mov-dropdown-item" id="0">
+                    <div class="nav-mov-dropdown-item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                            <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+                        </svg>
+                    </div>
+                    <div class="nav-mov-dropdown-item-title">MENU</div>
+                </div>
+                <div class="nav-mov-dropdown-item" id="1">
+                    <div class="nav-mov-dropdown-item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                        </svg>
+                    </div>
+                    <div class="nav-mov-dropdown-item-title">INFO</div>
+                </div>
+                <div class="nav-mov-dropdown-item" id="2">
+                    <div class="nav-mov-dropdown-item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                        </svg>
+                    </div>
+                    <div class="nav-mov-dropdown-item-title">PRODUCTS</div>
+                </div>
+                <div class="nav-mov-dropdown-item" id="3">
+                    <div class="nav-mov-dropdown-item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                            <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                        </svg>
+                    </div>
+                    <div class="nav-mov-dropdown-item-title">TEAM</div>
+                </div>
+                <div class="nav-mov-dropdown-item" id="4">
+                    <div class="nav-mov-dropdown-item-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                        </svg>
+                    </div>
+                    <div class="nav-mov-dropdown-item-title">CONTACT</div>
+                </div>
+            </div>
+            <!--CONTENT MOBILE-->
+            <nav class="navbar-desktop">
+                <div class="logo-box">Y</div>
+                <div class="top-nav-buttons-group">
+                    <div class="nav-dsk-choose-ball"></div>
+                    <div class="nav-mov-dropdown-item">
+                        <div class="nav-mov-dropdown-item-icon nav-dsk-dropdown-item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" id="dskNavIc0" class="bi bi-house-door" viewBox="0 0 16 16">
+                                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>
+                            </svg>
+                        </div>
+                        <div class="nav-dsk-dropdown-item" id="0"></div>
+                        <div class="nav-dsk-dropdown-title-item">MENU</div>
+                    </div>
+                    <div class="nav-mov-dropdown-item">
+                        <div class="nav-mov-dropdown-item-icon nav-dsk-dropdown-item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" id="dskNavIc1" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                            </svg>
+                        </div>
+                        <div class="nav-dsk-dropdown-item" id="1"></div>
+                        <div class="nav-dsk-dropdown-title-item">IDEA</div>
+                    </div>
+                    <div class="nav-mov-dropdown-item">
+                        <div class="nav-mov-dropdown-item-icon nav-dsk-dropdown-item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" id="dskNavIc2" class="bi bi-gear" viewBox="0 0 16 16">
+                                <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                                <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"/>
+                            </svg>
+                        </div>
+                        <div class="nav-dsk-dropdown-item" id="2"></div>
+                        <div class="nav-dsk-dropdown-title-item">DZIAŁANIE</div>
+                    </div>
+                    <div class="nav-mov-dropdown-item">
+                        <div class="nav-mov-dropdown-item-icon nav-dsk-dropdown-item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" id="dskNavIc3" class="bi bi-bookmark-star" viewBox="0 0 16 16">
+                                <path d="M7.84 4.1a.178.178 0 0 1 .32 0l.634 1.285a.18.18 0 0 0 .134.098l1.42.206c.145.021.204.2.098.303L9.42 6.993a.18.18 0 0 0-.051.158l.242 1.414a.178.178 0 0 1-.258.187l-1.27-.668a.18.18 0 0 0-.165 0l-1.27.668a.178.178 0 0 1-.257-.187l.242-1.414a.18.18 0 0 0-.05-.158l-1.03-1.001a.178.178 0 0 1 .098-.303l1.42-.206a.18.18 0 0 0 .134-.098z"/>
+                                <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"/>
+                            </svg>
+                        </div>
+                        <div class="nav-dsk-dropdown-item" id="3"></div>
+                        <div class="nav-dsk-dropdown-title-item">ZASTOSOWANIA</div>
+                    </div>
+                    <div class="nav-mov-dropdown-item">
+                        <div class="nav-mov-dropdown-item-icon nav-dsk-dropdown-item-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" id="dskNavIc4" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                            </svg>
+                        </div>
+                        <div class="nav-dsk-dropdown-item" id="4"></div>
+                        <div class="nav-dsk-dropdown-title-item">AUTOR</div>
+                    </div>
+                </div>
+                <div class="bottom-nav-buttons-group">
+                    <div class="nav-mob-icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"/>
+                        </svg>
+                    </div>
+                    <div class="nav-mob-icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                        </svg>
+                    </div>
+                    <div class="nav-mob-icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg>
+                    </div>
+                    <div class="nav-mob-icon-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-stack-overflow" viewBox="0 0 16 16">
+                            <path d="M12.412 14.572V10.29h1.428V16H1v-5.71h1.428v4.282h9.984z"/>
+                            <path d="M3.857 13.145h7.137v-1.428H3.857zM10.254 0 9.108.852l4.26 5.727 1.146-.852zm-3.54 3.377 5.484 4.567.913-1.097L7.627 2.28l-.914 1.097zM4.922 6.55l6.47 3.013.603-1.294-6.47-3.013-.603 1.294zm-.925 3.344 6.985 1.469.294-1.398-6.985-1.468-.294 1.397z"/>
+                        </svg>
+                    </div>
+                </div>
+            </nav>
+            <!--CONTENT DESKTOP-->
+            <section class="dsk-content-col-group">
+                <div class="dsk-content-col"></div>
+                <div class="dsk-content-col"></div>
+                <div class="dsk-content-col"></div>
+                <div class="dsk-content-col"></div>
+            </section>
+            <article class="dsk-content">
+                <section class="page page-menu">
+                    <video loop="true" class="pm-video-background" alt="background video">
+                        <source src="video/yolo-1.mp4">
+                    </video>
+                    <div class="pm-text-box">
+                        <div class="pm-title-box">
+                            <div class="pm-title-word">algorytm</div>
+                            <div class="pm-title-word">yolo</div>
+                        </div>
+                        <div class="pm-anim-box">
+                            <div class="pm-fixed-word">Ulepsza:</div>
+                            <div class="pm-action-word">
+                                <div class="pw-action-world-proper"></div>
+                                <div class="pw-action-world-proper-line">|</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page page-intro">
+                    <div class="intro-buttons-group">
+                        <div id="2" class="button">Definicja</div>  <!--[2]-->
+                        <div id="4" class="button">Idea</div>  <!--[4]-->
+                        <div id="1" class="button">Sieć neuronowa</div>  <!--[1]-->
+                        <div id="5" class="button">Historia</div>  <!--[5]-->
+                        <div id="3" class="button">Perspektywy rozwoju</div>  <!--[0]-->
+                        <div id="0" class="button">Wyzwania i ograniczenia</div>  <!--[0]-->
+                    </div>
+                    <div class="cube">
+                        <div class="face front"><!--Wyzwania i ograniczenia-->
+                            <div>
+                                <div class="FRONT">
+                                    <ul>
+                                        <li><b>Detekcja małych obiektów:</b> Algorytm, może mieć trudności z dokładnym zlokalizowaniem i klasyfikacją obiektów o niewielkich rozmiarach.</li>
+                                        <li><b>Detekcja obiektów o nietypowych kształtach:</b> Obiekty o skomplikowanych kształtach mogą być źle zlokalizowane lub błędnie sklasyfikowane.</li>
+                                        <li><b>Ograniczenia wydajnościowe:</b> Algorytm YOLO wymaga stosunkowo dużej mocy obliczeniowej.</li>
+                                        <li><b>Konieczność dostosowania parametrów:</b> Efektywne wykorzystanie algorytmu YOLO wymaga dostosowania wielu parametrów, takich jak rozmiar siatki czy, parametry uczenia się.</li>
+                                        <li><b>Zróżnicowane warunki oświetleniowe:</b> Algorytm YOLO może mieć trudności z detekcją obiektów w zróżnicowanych warunkach oświetleniowych.</li>
+                                        <li><b>Ograniczenia zbiorów danych treningowych:</b> Skuteczne trenowanie modelu YOLO wymaga dostępu do dużej i różnorodnej bazy danych.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face back"><!--Sieć neuronowa-->
+                            <div>
+                                <div class="BACK">
+                                    Sieć neuronowa to model matematyczny inspirowany biologicznym układem
+                                    nerwowym organizmów, który składa się z połączonych ze sobą neuronów
+                                    (jednostek przetwarzających informacje). Neurony te przesyłają sygnały
+                                    między sobą, co umożliwia sieci neuronowej przetwarzanie informacji i
+                                    wykonywanie złożonych obliczeń.
+                                    <br><br>
+                                    W kontekście uczenia maszynowego i deep learning, sieci neuronowe
+                                    odgrywają kluczową rolę jako model do uczenia się złożonych wzorców i
+                                    wykonywania zadań, które byłyby trudne lub niemożliwe do wykonania przez
+                                    tradycyjne algorytmy.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face right"><!--Definicja-->
+                            <div>
+                                <div class="RIGHT">
+                                    Algorytm YOLO ("You Only Look Once") to zaawansowany algorytm
+                                    detekcji obiektów w obrazach i wideo, który wykorzystuje głębokie
+                                    sieci neuronowe do jednoczesnego wykrywania i klasyfikacji obiektów
+                                    na obrazie. Jest to jedna z najbardziej znanych metod w dziedzinie
+                                    przetwarzania wizyjnego, która zdobyła popularność dzięki swojej
+                                    skuteczności i szybkości działania. Algorytm ten wyróżnia się
+                                    zdolnością do dokładnego wykrywania wielu obiektów w czasie
+                                    rzeczywistym.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face left"><!--Perspektywy rozwoju-->
+                            <div>
+                                <div class="LEFT">
+                                    Algorytm YOLO jest stale rozwijany i udoskonalany, aby sprostać coraz
+                                    większym wyzwaniom:
+                                    <ul class="purpose-list">
+                                        <li><b>Ulepszenie dokładności i wydajności:</b> Jednym z głównych celów rozwoju algorytmu YOLO jest ciągłe zwiększanie dokładności detekcji obiektów.</li>
+                                        <li><b>Rozszerzenie zastosowań:</b> Algorytm YOLO może być rozwijany w kierunku obsługi nowych zastosowań i scenariuszy.</li>
+                                        <li><b>Adaptacja do specjalistycznych dziedzin:</b> Perspektywy rozwoju algorytmu YOLO obejmują również adaptację do specjalistycznych dziedzin.</li>
+                                        <li><b>Integracja z innymi technologiami:</b> śledzenie obiektów, rozpoznawanie twarzy, przetwarzanie języka naturalnego.</li>    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face top"><!--Idea-->
+                            <div>
+                                <div class="TOP">
+                                    Jego główną ideą jest skuteczne i efektywne wykrywanie obiektów
+                                    na obrazach i wideo, niezależnie od ich liczby i typu,
+                                    przy minimalnym czasie przetwarzania. YOLO dąży do osiągnięcia
+                                    wysokiej dokładności detekcji obiektów, jednocześnie zachowując
+                                    szybkość działania, co czyni go atrakcyjnym narzędziem w różnych
+                                    aplikacjach. Jego ideą jest również umożliwienie jednoczesnego
+                                    wykrywania wielu obiektów oraz traktowanie tychże obiektów
+                                    jako problem regresji, gdzie algorytm przewiduje klasę obiektu na
+                                    podstawie jego danych wejściowych, co pozwala na kompleksową analizę
+                                    sceny wizualnej.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="face bottom"><!--"Historia"-->
+                            <div>
+                                <div class="BOTTOM">
+                                    <b>Początki:</b> Pierwsza wersja algorytmu YOLO została zaimplementowana
+                                    i opracowana w 2015 roku przez Josepha Redmona, Santosh’a Divvala i Rossa
+                                    Girshicka, którzy opublikowali swoje prace w artykule naukowym "You Only
+                                    Look Once: Unified, Real-Time Object Detection". W tym artykule autorzy
+                                    opisali koncepcję algorytmu YOLO oraz jego architekturę, prezentując
+                                    również wyniki eksperymentów, które potwierdziły skuteczność algorytmu w
+                                    detekcji obiektów na obrazach. Ten artykuł naukowy jest uznawany za pierwsze
+                                    publiczne przedstawienie algorytmu YOLO.
+                                    <br><br>
+                                    <b>YOLOv2:</b> W 2016 roku Joseph Redmon i Ali Farhadi wydali następną wersję
+                                    algorytmu, YOLOv2. Ta aktualizacja wprowadziła szereg usprawnień, w tym
+                                    lepszą dokładność, szybsze przetwarzanie oraz obsługę detekcji obiektów
+                                    w różnych skalach i proporcjach.
+                                    <br><br>
+                                    <b>YOLOv3:</b> W 2018 roku Joseph Redmon i Ali Farhadi wydali kolejną aktualizację
+                                    algorytmu, YOLOv3. Ta wersja wprowadziła dalsze ulepszenia w dokładności i
+                                    szybkości detekcji obiektów, a także dodatkowe funkcje, takie jak detekcja
+                                    obiektów o różnych rozmiarach i kształtach.
+                                    <br><br>
+                                    <b>YOLOv4 i YOLOv5:</b> Chociaż Joseph Redmon opuścił projekt YOLO, rozwój algorytmu
+                                    nadal trwał. W 2020 roku Alexey Bochkovskiy, Chien-Yao Wang i Hong-Yuan Mark
+                                    Liao wydali YOLOv4, który wprowadził dalsze usprawnienia w dokładności i
+                                    wydajności detekcji obiektów. W międzyczasie, YOLOv5 został opracowany przez
+                                    Glenn’a Jocher’a, który wprowadził szereg zmian w architekturze sieci, dążąc
+                                    do uproszczenia i szybszego działania algorytmu.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page page-work">
+                    <div class="img-slider-body">
+                    </div>
+                    <div class="img-slider-control-box">
+                        <div class="iscb-leftArrow-box">
+                            <div class="iscb-leftArrow-cover"></div>
+                            <div class="iscb-leftArrow-proper">&#060;</div>
+                        </div>
+                        <div class="iscb-info-box">
+                            <div class="iscb-ib-text">
+                                <!--Blok na tekst stały względem przerzucania slajdów-->
+                            </div>
+                            <div class="iscb-ib-img-state">
+                                <div class="iscb-ib-is-group-box"></div>
+                            </div>
+                        </div>
+                        <div class="iscb-rightArrow-box">
+                            <div class="iscb-rightArrow-cover"></div>
+                            <div class="iscb-rightArrow-proper">&#062;</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="page page-purpose">
+                    <div class="pt-content">
+                        <div class="pt-content-title">zastosowania</div>
+                        <div class="pt-content-gif">
+                            <div class="pt-content-gif-image">
+                                <div class="ptcw-cover ptcwi-1"></div>
+                            </div>
+                            <div class="pt-content-gif-backface">
+                                <div class="pt-content-gif-backface-image ptcwbi-1"></div>
+                            </div>
+                            <div class="pt-gif-inside-content">
+                                <div class="pt-gif-name">Bezpieczeństwo publiczne</div>
+                                <div class="pt-gif-desc">
+                                    Algorytm YOLO odgrywa istotną rolę w monitorowaniu miejsc publicznych,
+                                    takich jak ulice, place czy lotniska, w celu wykrywania podejrzanych
+                                    działań lub obiektów, co przyczynia się do zapewnienia bezpieczeństwa
+                                    publicznego.
+                                    <br><br>
+                                    Algorytm YOLO w kontekście bezpieczeństwa publicznego pełni funkcje:
+                                    <ul class="purpose-list">
+                                        <li>wykrywania pojedrzanych działań,</li>
+                                        <li>rozpoznawania poszukiwanych osób,</li>
+                                        <li>monitorowania tłumu,</li>
+                                        <li>kontroli dostępu do obiektów publicznych.</li>
+                                    </ul>
+                                    Dzięki tym cechom YOLO stanowi wartościowe narzędzie w dziedzinie
+                                    bezpieczeństwa publicznego, wspomagając służby odpowiedzialne za
+                                    utrzymanie porządku i bezpieczeństwo w miejscach publicznych.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-content-gif">
+                            <div class="pt-content-gif-image">
+                                <div class="ptcw-cover ptcwi-2"></div>
+                            </div>
+                            <div class="pt-content-gif-backface">
+                                <div class="pt-content-gif-backface-image ptcwbi-2"></div>
+                            </div>
+                            <div class="pt-gif-inside-content">
+                                <div class="pt-gif-name">Automatyczne kasy w sklepach</div>
+                                <div class="pt-gif-desc">
+                                    Zastosowanie algorytmu YOLO w automatycznych kasach w
+                                    sklepach ma na celu usprawnienie procesu zakupowego poprzez automatyczną
+                                    identyfikację produktów.
+                                    <br><br>
+                                    W stosunku do automatycznych kas w sklepach algorytm YOLO umożliwia:
+                                    <ul class="purpose-list">
+                                        <li>automatyczną identyfikację produktów,</li>
+                                        <li>szybkość i efektywnosć pracy,</li>
+                                        <li>zmniejszenie błędów pracy,</li>
+                                        <li>optymalizację zarządzania stanami magazynowymi,</li>
+                                        <li>redukcję kosztów pracy,</li>
+                                        <li>integrację z systemami płatności bezgotówkowych.</li>
+                                    </ul>
+                                    W rezultacie, wykorzystanie algorytmu YOLO w automatycznych kasach w
+                                    sklepach przyczynia się do usprawnienia procesu zakupowego, poprawy
+                                    doświadczenia klienta oraz optymalizacji zarządzania magazynem i kosztami
+                                    operacyjnymi sklepu.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-content-gif">
+                            <div class="pt-content-gif-image">
+                                <div class="ptcw-cover ptcwi-3"></div>
+                            </div>
+                            <div class="pt-content-gif-backface">
+                                <div class="pt-content-gif-backface-image ptcwbi-3"></div>
+                            </div>
+                            <div class="pt-gif-inside-content">
+                                <div class="pt-gif-name">Samochody autonomiczne</div>
+                                <div class="pt-gif-desc">
+                                    YOLO znajduje zastosowanie również w technologii samochodów autonomicznych,
+                                    gdzie pomaga w rozpoznawaniu i śledzeniu innych pojazdów, pieszych, znaków
+                                    drogowych i innych obiektów na drodze.
+                                    <br><br>
+                                    W samochodach autonomicznych algorytm YOLO umożliwia:
+                                    <ul class="purpose-list">
+                                        <li>detekcję i śledzenie obiektów na drodze,</li>
+                                        <li>identyfikację systuacji drogowych,</li>
+                                        <li>wykrywanie zagrożeń,</li>
+                                        <li>ostrzeżenia przed pieszymi i rowerzystami,</li>
+                                        <li>rozpoznawanie znaków drogowych,</li>
+                                        <li>zarządzanie ruchem,</li>
+                                        <li>monitoring stanu kierowcy.</li>
+                                    </ul>
+                                    Wykorzystanie algorytmu YOLO w autonomicznych samochodach przyczynia się
+                                    do poprawy bezpieczeństwa na drodze, zwiększenia efektywności podróży oraz
+                                    rozwijania zaawansowanych funkcji systemów wspomagających kierowcę. Dzięki
+                                    dokładnej detekcji i analizie obiektów na drodze, systemy autonomiczne mogą
+                                    lepiej zrozumieć otoczenie i podejmować bardziej świadome decyzje w czasie
+                                    rzeczywistym.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-content-gif">
+                            <div class="pt-content-gif-image">
+                                <div class="ptcw-cover ptcwi-4"></div>
+                            </div>
+                            <div class="pt-content-gif-backface">
+                                <div class="pt-content-gif-backface-image ptcwbi-4"></div>
+                            </div>
+                            <div class="pt-gif-inside-content">
+                                <div class="pt-gif-name">Medycyna</div>
+                                <div class="pt-gif-desc">
+                                    Stoswanie algorytmu YOLO w medycynie obejmuje różnorodne aplikacje, które
+                                    wspierają diagnozę, leczenie i badania medyczne.
+                                    <br><br>
+                                    Najefektywniejszymi zastosowaniami algorytmu YOLO w medycynie są:
+                                    <ul class="purpose-list">
+                                        <li>analiza obrazów medycznych,</li>
+                                        <li>wykrywanie zmian chorobowych,</li>
+                                        <li>wsparcie przy prowadzeniu zabiegów chirurgicznych,</li>
+                                        <li>badania przesiewowe i skriningowe,</li>
+                                        <li>segmentacja obrazów medycznych,</li>
+                                        <li>planowanie leczenia,</li>
+                                        <li>monitorowanie postępu choroby.</li>
+                                    </ul>
+                                    Zastosowanie algorytmu YOLO w medycynie przyczynia się do poprawy diagnostyki,
+                                    leczenia i monitorowania pacjentów, co przekłada się na skuteczniejsze działania
+                                    medyczne oraz zwiększenie szans na szybkie wykrycie i skuteczne leczenie chorób.
+                                    Dzięki automatycznej analizie obrazów medycznych, możliwe jest również zwiększenie
+                                    efektywności pracy personelu medycznego oraz optymalizacja czasu potrzebnego na
+                                    diagnozę i terapię.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-content-gif">
+                            <div class="pt-content-gif-image">
+                                <div class="ptcw-cover ptcwi-5"></div>
+                            </div>
+                            <div class="pt-content-gif-backface">
+                                <div class="pt-content-gif-backface-image ptcwbi-5"></div>
+                            </div>
+                            <div class="pt-gif-inside-content">
+                                <div class="pt-gif-name">Przemysł produkcyjny</div>
+                                <div class="pt-gif-desc">
+                                    Zastosowanie algorytmu YOLO w przemyśle produkcyjnym może przynieść wiele korzyści
+                                    związanych z automatyzacją, optymalizacją oraz bezpieczeństwem procesów produkcyjnych.
+                                    <br><br>
+                                    W przemyśle produkcyjnym algorytm YOLO stosuje się do:
+                                    <ul class="purpose-list">
+                                        <li>detekcji i kontroli jakości,</li>
+                                        <li>monitorowania procesów produkcyjnych,</li>
+                                        <li>kontroli bezpieczeństwa pracowników,</li>
+                                        <li>optymalizacji procesów logicznych,</li>
+                                        <li>automatycznej identyfikacji produktów,</li>
+                                        <li>pomoc w utrzymaniu maszyn i urządzeń,</li>
+                                        <li>optymalizacji przepływu pracy.</li>
+                                    </ul>
+                                    Zastosowanie algorytmu YOLO w przemyśle produkcyjnym przyczynia się do poprawy
+                                    jakości, efektywności oraz bezpieczeństwa procesów produkcyjnych poprzez
+                                    automatyzację, monitorowanie oraz analizę danych wizualnych. Dzięki temu możliwe
+                                    jest szybsze reagowanie na zmiany w środowisku produkcyjnym oraz lepsze wykorzystanie
+                                    zasobów, co przekłada się na wzrost konkurencyjności i rentowności przedsiębiorstwa.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-content-gif">
+                            <div class="pt-content-gif-image">
+                                <div class="ptcw-cover ptcwi-6"></div>
+                            </div>
+                            <div class="pt-content-gif-backface">
+                                <div class="pt-content-gif-backface-image ptcwbi-6"></div>
+                            </div>
+                            <div class="pt-gif-inside-content">
+                                <div class="pt-gif-name">Przemysł rolniczy</div>
+                                <div class="pt-gif-desc">
+                                    Stosowanie algorytmu YOLO w przemyśle rolniczym obejmuje różnorodne aplikacje,
+                                    które wspierają monitorowanie upraw, optymalizację procesów rolniczych oraz
+                                    zwiększenie wydajności produkcji rolnej
+                                    <br><br>
+                                    W przemyśle rolnym algorytm YOLO stosuje się głównie do:
+                                    <ul class="purpose-list">
+                                        <li>monitorowania upraw,</li>
+                                        <li>wykrywania dojrzałości roślin,</li>
+                                        <li>oceny stanu gleby,</li>
+                                        <li>monitorowania nawożenia i nawadniania,</li>
+                                        <li>wykrywania chwastów,</li>
+                                        <li>planowania rozmieszczania roślin,</li>
+                                        <li>wsparcia przy zbiorach automatycznych,</li>
+                                        <li>zarządzania stadami zwierząt gospodarczych.</li>
+                                    </ul>
+                                    Zastosowanie algorytmu YOLO w przemyśle rolniczym przyczynia się do zwiększenia
+                                    efektywności produkcji, redukcji strat oraz poprawy jakości plonów. Dzięki
+                                    automatycznej analizie obrazów, możliwe jest szybkie reagowanie na zagrożenia
+                                    oraz optymalizacja procesów rolniczych, co przekłada się na zwiększenie zysków
+                                    oraz lepszą jakość żywności.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-content-gif">
+                            <div class="pt-content-gif-image">
+                                <div class="ptcw-cover ptcwi-7"></div>
+                            </div>
+                            <div class="pt-content-gif-backface">
+                                <div class="pt-content-gif-backface-image ptcwbi-7"></div>
+                            </div>
+                            <div class="pt-gif-inside-content">
+                                <div class="pt-gif-name">Prywatne systemy monitoringu</div>
+                                <div class="pt-gif-desc">
+                                    YOLO może być wykorzystywane w systemach monitoringu, na przykład w celu
+                                    wykrywania włamań, kradzieży czy wandalizmu w czasie rzeczywistym.
+                                    <br><br>
+                                    Najbardziej popularnymi zastosowaniami algorytmu YOLO w ochronie prywatnych
+                                    budynków są:
+                                    <ul class="purpose-list">
+                                        <li>detekcja intruzów,</li>
+                                        <li>monitorowanie ruchu na posesji,</li>
+                                        <li>wykrywanie kradzieży,</li>
+                                        <li>rozpoznawanie pojazdów,</li>
+                                        <li>monitorowanie zwierząt domowych,</li>
+                                        <li>ostrzeżenia przed pożarami lub zalaniem,</li>
+                                        <li>integracja z systemami alarmowymi.</li>
+                                    </ul>
+                                    Zastosowanie algorytmu YOLO w prywatnych systemach monitoringu przyczynia się
+                                    do zwiększenia bezpieczeństwa oraz komfortu mieszkańców, umożliwiając szybką
+                                    identyfikację zagrożeń i reagowanie na sytuacje awaryjne w czasie rzeczywistym.
+                                    Dzięki automatycznej analizie obrazów, możliwe jest ciągłe monitorowanie 
+                                    otoczenia oraz zapobieganie incydentom kryminalnym czy wypadkom.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-content-gif">
+                            <div class="pt-content-gif-image">
+                                <div class="ptcw-cover ptcwi-8"></div>
+                            </div>
+                            <div class="pt-content-gif-backface">
+                                <div class="pt-content-gif-backface-image ptcwbi-8"></div>
+                            </div>
+                            <div class="pt-gif-inside-content">
+                                <div class="pt-gif-name">Badania naukowe</div>
+                                <div class="pt-gif-desc">
+                                    W badaniach naukowych YOLO obejmuje szeroki zakres zastosowań, który skupia
+                                    się na analizie danych z różnych sektorów badań naukowych.
+                                    <br><br>
+                                    Sektorami badań naukowych w których stosuje się algorytm YOLO są:
+                                    <ul class="purpose-list">
+                                        <li>chemia, biologia - analiza obrazów mikroskopowych,</li>
+                                        <li>środowisko przyrodnicze - monitorowanie populacji zwierząt,</li>
+                                        <li>meteorioliga - analiza obrazów satelitarnych,</li>
+                                        <li>astronomia - badania astronimiczne,</li>
+                                        <li>patologia - analiza obrazów histologicznych,</li>
+                                        <li>socjologia - badania zachowań społecznych.</li>
+                                    </ul>
+                                    Zastosowanie algorytmu YOLO w badaniach naukowych przyczynia się do rozwijania
+                                    wiedzy w różnych dziedzinach nauki poprzez automatyczną analizę danych wizualnych
+                                    oraz monitorowanie zjawisk w czasie rzeczywistym. Dzięki precyzyjnej detekcji i
+                                    identyfikacji obiektów na obrazach, możliwe jest szybkie i efektywne przetwarzanie
+                                    danych oraz generowanie nowych odkryć naukowych.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-content-gif">
+                            <div class="pt-content-gif-image">
+                                <div class="ptcw-cover ptcwi-9"></div>
+                            </div>
+                            <div class="pt-content-gif-backface">
+                                <div class="pt-content-gif-backface-image ptcwbi-9"></div>
+                            </div>
+                            <div class="pt-gif-inside-content">
+                                <div class="pt-gif-name">Przemysł gier wideo</div>
+                                <div class="pt-gif-desc">
+                                    Algorytm YOLO znajduje szerokie zastosowanie w przemyśle gier wideo, gdzie
+                                    może w znaczącym stopniu wspomagać ich rozgrywkę, wytworzyć nowe mechaniki
+                                    gier. Poniżej znajdują się najciekawsze zastosowania algorytmu YOLO w przemyśle
+                                    gier wideo:
+                                    <br><br>
+                                    Algorytm YOLO stosuje się w przemyśle gier wideo do:
+                                    <ul class="purpose-list">
+                                        <li>detekcji postaci i obiektów,</li>
+                                        <li>rozpoznawania gestów i mimiki,</li>
+                                        <li>wykrywania kolizji i interakcji,</li>
+                                        <li>automatycznego generowania środowiska gry,</li>
+                                        <li>analizy zachowań przeciwników,</li>
+                                        <li>personalizacji doświadczenia graczy,</li>
+                                        <li>śledzenia gestów i ruchów gracza.</li>
+                                    </ul>
+                                    Zastosowanie algorytmu YOLO w przemyśle gier wideo przyczynia się do zwiększenia
+                                    realizmu, interaktywności oraz zaangażowania graczy poprzez lepszą detekcję,
+                                    analizę oraz odpowiedź na ich działania w czasie rzeczywistym. Dzięki temu możliwe
+                                    jest tworzenie bardziej dynamicznych i satysfakcjonujących doświadczeń wirtualnych.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-content-gif">
+                            <div class="pt-content-gif-image">
+                                <div class="ptcw-cover ptcwi-10"></div>
+                            </div>
+                            <div class="pt-content-gif-backface">
+                                <div class="pt-content-gif-backface-image ptcwbi-10"></div>
+                            </div>
+                            <div class="pt-gif-inside-content">
+                                <div class="pt-gif-name">Armia</div>
+                                <div class="pt-gif-desc">
+                                    Algorytm YOLO jest używany w armii w różnych kontekstach,
+                                    aby zwiększyć zdolności obronne, monitorować tereny i poprawić
+                                    świadomość sytuacyjną.
+                                    <br><br>
+                                    Algorytm YOLO stosuje się w armii do:
+                                    <ul class="purpose-list">
+                                        <li>nadzoru granic,</li>
+                                        <li>monitorowania wrogich terenów,</li>
+                                        <li>rozpoznawania pojazdów i sprzętu,</li>
+                                        <li>automatycznego rozpoznawania celów,</li>
+                                        <li>bezpieczeństwa żołnieży,</li>
+                                        <li>analizy danych z dronów,</li>
+                                        <li>wsparcia przy podejmowaniu decyzji.</li>
+                                    </ul>
+                                    Zastosowanie algorytmu YOLO w armii umożliwia bardziej efektywne
+                                    wykorzystanie zasobów i zwiększenie zdolności obronnych poprzez
+                                    szybką identyfikację i reakcję na zagrożenia. Jednocześnie wymaga
+                                    to jednak odpowiedniej ochrony danych i przestrzegania zasad
+                                    dotyczących prywatności, aby uniknąć nadużyć i naruszeń praw człowieka.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-background"></div>
+                </section>
+                <section class="page page-author">
+                    <div class="pc-contect-box">
+                        <div class="pt-author-title">prezentację wykonał:</div>
+                        <div class="pt-author-box">
+                            <div class="pt-author-border"><div>Patryk Szewczyk</div></div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </div>
+    <div class="cookie-box">
+        <div class="cookie-title">Cookies</div>
+        <div class="cookie-desc">
+            I, Patryk Szewczyk 1 INF AHNS Sp. z o.o., use in my websites 
+            from cookie files. This files is essential for websites working.
+            Due to cookies we can get to know about you and in future in 
+            next website entry we provide you personalized content.
+        </div>
+        <div class="cookie-accept">Accept cookies</div>
+        <div class="cookie-about">About cookies</div>
+    </div>
+
+    <script src="yolo.js"></script>
+</body>
+</html>
